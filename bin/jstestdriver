@@ -62,7 +62,7 @@ switch(process.argv[2]) {
         log(tests)
         break
     default:
-        var command = spawn('java', [ '-jar', path.join(lib, 'jstestdriver.jar') ].concat(_.rest(process.argv, 3)))
+        var command = spawn('java', [ '-jar', path.join(lib, 'jstestdriver.jar') ].concat(_.rest(process.argv, 2)))
         log(command)
         break
 }
